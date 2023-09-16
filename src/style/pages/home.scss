@@ -1,0 +1,12 @@
+body {
+  // background: url("/src/images/piranha-squad.jpg") #111 no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  height: calc(100% - 200px);
+  margin: auto;
+}

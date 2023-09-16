@@ -1,0 +1,73 @@
+$xl: 1921px;
+$lg: 1500px;
+$md: 1024px;
+$sm: 768px;
+$xs: 550px;
+$xxs: 380px;
+
+:root {
+
+  // Colors //
+  // À remplacer selon le thème//
+  --primary: #3DB236;
+  --secondary: #173B31;
+  --tertiary: #653001;
+
+  // Par défaut //
+  --monochrome-0: #000;
+  --monochrome-1: #111;
+  --monochrome-2: #222;
+  --monochrome-3: #333;
+  --monochrome-4: #444;
+  --monochrome-5: #555;
+  --monochrome-6: #666;
+  --monochrome-7: #777;
+  --monochrome-8: #888;
+  --monochrome-9: #999;
+  --monochrome-10: #aaa;
+  --monochrome-11: #bbb;
+  --monochrome-12: #ccc;
+  --monochrome-13: #ddd;
+  --monochrome-14: #eee;
+  --monochrome-15: #fff;
+
+  // Font-family //
+  --font-family: "Montserrat", Arial, sans-serif;
+  --title-font-family: Oswald,Arial,Helvetica,"sans-serif";
+
+  // Spacing //
+  --spacing-small: 30px;
+  --spacing-medium: 75px;
+  --spacing-large: 125px;
+
+  // Text //
+  --text-font-size: 1rem;
+  --text-line-height: 1.5rem;
+  --text-font-weight: 400;
+  --text-font-style: normal;
+  --text-text-transform: none;
+}
+
+@mixin title-h1 {
+
+}
+
+@mixin title-h2 {
+
+}
+
+@mixin title-h3 {
+
+}
+
+@mixin title-h4 {
+
+}
+
+@mixin title-h5 {
+
+}
+
+@mixin title-h6 {
+
+}
