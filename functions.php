@@ -85,5 +85,35 @@ function change_post_object_label() {
     $labels->not_found = 'No Reviews found';
     $labels->not_found_in_trash = 'No Reviews found in Trash';
 }
-add_action( 'init', 'change_post_object_label' );
-add_action( 'admin_menu', 'change_post_menu_label' );
+add_action('init', 'change_post_object_label');
+add_action('admin_menu', 'change_post_menu_label');
+
+// Register a custom taxonomy for reviews (categories)
+function register_review_categories() {
+    $labels = array(
+        'name' => 'Review Categories',
+        'singular_name' => 'Review Category',
+        'search_items' => 'Search Categories',
+        'all_items' => 'All Categories',
+        'parent_item' => 'Parent Category',
+        'parent_item_colon' => 'Parent Category:',
+        'edit_item' => 'Edit Category',
+        'update_item' => 'Update Category',
+        'add_new_item' => 'Add New Category',
+        'new_item_name' => 'New Category Name',
+        'menu_name' => 'Review Categories',
+    );
+
+    $args = array(
+        'hierarchical' => true, // Set to true for a category-like taxonomy
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'review-category'), // Customize the slug
+    );
+
+    register_taxonomy('review_category', 'post', $args);
+}
+
+add_action('init', 'register_review_categories');

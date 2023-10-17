@@ -16,12 +16,12 @@
 
     <noscript><iframe src=""></iframe></noscript>
 
-      <div class="top__header container small" >
-            <header class="head__master " role="header">
+      <div class="top__header" >
+            <header class="head__master container" role="header">
                 <div class="container-fluid">
 
                     <a class="logo-name" href="<?php echo home_url();?>">
-                        <p>BowHuntAndFlyCast<span>.</span></p>
+                        <p>BowHuntAndFlyCast</p>
                     </a>
                     <nav class="navigation-desktop" role="navigation">
                         <div id="menuToggle">
