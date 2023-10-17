@@ -2,10 +2,10 @@
         
         <footer id="footer">
     <div class="container-fluid">
-        <div class="footer__master">
+        <div class="footer__master container">
             <div class="logo">
                 <a class="logo-name" href="<?php echo home_url();?>">
-                    <p><span>.</span></p>
+                    <p><span>BowHuntAndFlyCast</span></p>
                 </a>
                 <div class="links">
                     <ul>
