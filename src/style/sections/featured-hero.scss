@@ -1,52 +1,31 @@
-.featured-hero__container {
-  width: 100%;
-  height: 100%;
-}
 
-.featured-hero {
+.hero {
+  border: 2px solid red;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.85) 100%),url('/src/images/reelstream.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 0;
-  height: 100%;
-  .featured-hero__title_h2{
-    color: #ffffff;
-  }
-  .orgnc-SingleImage-wrapper{
-    padding-top: 250px;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    // max-width: 1800px;
-    img{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  }
+  color: #fff;
+  // filter: grayscale(100%);
 }
 
-.products_fishing {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 1200px;
-  padding: 50px;
-  margin-bottom: 200px;
-  .product_card {
-    max-width: 300px;
-    padding: 20px;
-    img {
-      width: 100%;
-      max-height: 180px;
-    }
-  }
+.hero-content {
+  text-align: center;
+  margin-bottom: 75px;
 }
 
-// .product_card {
-//   max-width: 300px;
-//   padding: 20px;
-// }
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
 
-// .product_card img {
-//   width: 100%;
-//   max-height: 180px;
-// }
+.hero p {
+  font-size: 18px;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}

@@ -16,7 +16,9 @@
 
     <noscript><iframe src=""></iframe></noscript>
 
+
       <div class="top__header" >
+
             <header class="head__master container" role="header">
                 <div class="container-fluid">
 
@@ -51,6 +53,7 @@
                     </ul>
                 </div>
             </nav>
-        </div>
 
-     <main role="main" class="column">
+        </div>
+        
+     <main >
