@@ -53,8 +53,15 @@ body ::-webkit-scrollbar {
   height: 4px;
 }
 
+.upper__header{
+    height: 35px;
+    background-color: var(--tertiary);
+}
+
 .top__header {
-  background: #38433A;
+    margin: 0 auto;
+max-width: 1200px;
+
 //   @media (min-width: 991px) {
 //       padding-bottom: 4em;
 //   }
@@ -64,19 +71,25 @@ body ::-webkit-scrollbar {
   padding-left: 15px;;
   p{
       font-family: "Ubuntu", sans-serif;
-      color: white;
+      color: #fff;
       font-size: 2em;
       margin: 0;
 
           span {
-          color: #ffffff;
+          color: var(--secondary);
           }
   }
 }
 
 .head__master{
-  background: #38433A;
-  padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
 
   .submenu-center{
       display: flex;
@@ -93,7 +106,8 @@ body ::-webkit-scrollbar {
       }
 
   .container-fluid {
-      width: 100%;
+    max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -124,13 +138,13 @@ body ::-webkit-scrollbar {
               }
           
               li {
-                color: #ffffff;
+                color: #fff;
                   &.account {
                   a {
                           border-radius: 4em;
                           padding: 0.65em 1.25em;
                           line-height: 1;
-                          color: white;
+                          color: var(--secondary);
                           margin-left: 30px;
                           font-weight: 500;
                           &:hover {
@@ -367,14 +381,14 @@ body ::-webkit-scrollbar {
 }
 
 .top__header {
-  position: relative;
+    background-color: transparent;
   &:before {
       content: '';
       width: 100%;
       height: calc(100% - 50px);
       top: 0;
       left: 0;
-      background: #09114F;
+      background-color: transparent;
       position: absolute;
       z-index: -1;
 
@@ -384,7 +398,7 @@ body ::-webkit-scrollbar {
   }
 
   .container {
-      position: relative;
+
   }
 
   &.sticky {

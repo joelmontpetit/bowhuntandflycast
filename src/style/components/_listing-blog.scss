@@ -1,0 +1,49 @@
+/* listing_blog.scss */
+
+/* Grid container */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 20px;
+    height: 600px;
+
+    /* Responsive design */
+    @media screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
+    /* Style individual review items */
+    .review-item {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        /* Review thumbnail */
+        .review-thumbnail {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Review content */
+        .review-content {
+            padding: 20px;
+
+            /* Review title */
+            .review-title {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            /* Review excerpt */
+            .review-excerpt {
+                font-size: 1rem;
+                color: #555;
+            }
+        }
+    }
+}
